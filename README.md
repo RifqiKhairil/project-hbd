@@ -27,3 +27,4 @@ Vercel tidak menyediakan MySQL lokal. Gunakan database yang dapat diakses dari i
 ## Lokal
 
 Salin `.env.example` menjadi `.env` sebagai catatan konfigurasi lokal, lalu atur nilainya di environment PHP yang digunakan. PHP bawaan tidak memuat `.env` secara otomatis. Jalankan situs dengan PHP lokal dan pastikan database MySQL serta tabel `tb_pesan` sudah tersedia.
+ 
