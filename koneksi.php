@@ -12,9 +12,28 @@ if (!$dbHost || !$dbName || !$dbUser || $dbPassword === false) {
     exit("Layanan pesan belum dikonfigurasi.");
 }
 
-$koneksi = mysqli_connect($dbHost, $dbUser, $dbPassword, $dbName, $dbPort);
+/* Koneksi database dengan SSL */
+$koneksi = mysqli_init();
 
-if (!$koneksi) {
+mysqli_ssl_set(
+    $koneksi,
+    null,
+    null,
+    null,
+    null,
+    null
+);
+
+if (!mysqli_real_connect(
+    $koneksi,
+    $dbHost,
+    $dbUser,
+    $dbPassword,
+    $dbName,
+    $dbPort,
+    null,
+    MYSQLI_CLIENT_SSL
+)) {
     error_log("Database connection failed: " . mysqli_connect_error());
     http_response_code(500);
     exit("Layanan pesan sedang tidak tersedia.");
