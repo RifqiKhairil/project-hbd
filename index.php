@@ -77,6 +77,7 @@ if (!isUserAuthenticated()) {
         }
 
         #carousel {
+            background: red !important;
             position: relative;
             width: 100%;
             height: 350px;
@@ -617,6 +618,7 @@ if (!isUserAuthenticated()) {
             }
 
             #carousel {
+            background: red !important;
                 height: 280px;
                 width: 100%;
             }
