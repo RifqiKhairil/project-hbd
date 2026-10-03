@@ -792,31 +792,31 @@ if (!isUserAuthenticated()) {
                     <div id="carousel">
 
                         <div class="hideLeft">
-                            <img src="assets/img/f1.jpg">
+                            <img src="/assets/img/f1.jpg">
                         </div>
 
                         <div class="prevLeftSecond">
-                            <img src="assets/img/f2.jpeg">
+                            <img src="/assets/img/f2.jpeg">
                         </div>
 
                         <div class="prev">
-                            <img src="assets/img/f3.jpeg">
+                            <img src="/assets/img/f3.jpeg">
                         </div>
 
                         <div class="selected">
-                            <img src="assets/img/f4.jpeg">
+                            <img src="/assets/img/f4.jpeg">
                         </div>
 
                         <div class="next">
-                            <img src="assets/img/f5.jpeg">
+                            <img src="/assets/img/f5.jpeg">
                         </div>
 
                         <div class="nextRightSecond">
-                            <img src="assets/img/f6.jpeg">
+                            <img src="/assets/img/f6.jpeg">
                         </div>
 
                         <div class="hideRight">
-                            <img src="assets/img/f7.jpeg">
+                            <img src="/assets/img/f7.jpeg">
                         </div>
 
                     </div>
