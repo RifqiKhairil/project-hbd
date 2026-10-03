@@ -124,6 +124,7 @@ if (!isUserAuthenticated()) {
         /* FOTO */
 
         #carousel div img {
+            display: block !important;
             width: 600px;
             height: 600px;
 
@@ -219,6 +220,7 @@ if (!isUserAuthenticated()) {
         /* TENGAH */
 
         #carousel div.selected {
+            opacity: 1 !important;
             z-index: 10;
             left: 50%;
 
