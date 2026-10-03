@@ -12,5 +12,10 @@ if ($request === '/auth/login.php') {
     exit;
 }
 
+if ($request === '/simpan_pesan.php') {
+    require_once __DIR__ . '/../simpan_pesan.php';
+    exit;
+}
+
 http_response_code(404);
 echo "404 - Halaman tidak ditemukan";
