@@ -2,7 +2,7 @@
 
 $request = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-if ($request === '/' || $request === '') {
+if ($request === '/' || $request === '/index.php' || $request === '') {
     require_once __DIR__ . '/../index.php';
     exit;
 }
